@@ -1,5 +1,5 @@
-TARGET=lib/libexternfunc.so
-OBJECTS=externFunctions.o
+TARGET=lib/libextfunc.so
+OBJECTS=extFunc.o
 XX=g++
 INCLUDE=./src/
 CXXFLAGS=-std=c++11 -I ${INCLUDE} -fPIC
