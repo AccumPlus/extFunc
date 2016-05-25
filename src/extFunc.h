@@ -10,4 +10,8 @@ extern "C" std::vector<std::string> split (const std::string &temp, const char &
 
 extern "C" std::string get_curdate();
 
+extern "C" std::string unicodeToLower(const std::string &str);
+
+extern "C" std::string unicodeToUpper(const std::string &str);
+
 #endif
