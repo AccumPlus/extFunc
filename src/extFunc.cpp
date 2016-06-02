@@ -19,12 +19,12 @@ extern "C" std::vector<std::string> split(const std::string &str, const char &de
 	return res;
 }
 
-extern "C" std::string get_curdate()
+extern "C" std::string get_curdate(const std::string& format)
 {
     time_t tp = time(NULL);
     struct tm *_tm = localtime(&tp);
     char dt[30];
-    strftime(dt, 30, "%d%m%Y-%H%M%S", _tm);
+    strftime(dt, 30, format.c_str(), _tm);
     return std::string(dt);
 }
 
